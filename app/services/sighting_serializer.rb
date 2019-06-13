@@ -11,7 +11,7 @@ class SightingSerializer
           only: [:name, :species]
         },
       location: {
-        only: {[:latitude, :longitude]}
+        only: [:latitude, :longitude]
       },
       except: [:updated_at])
     }
